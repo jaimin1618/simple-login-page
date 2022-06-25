@@ -1,0 +1,80 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,1,1,0.6)), url(background2.jpg);
+    background-size: cover;
+    /*
+    NOTE:
+    format of blur only background
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,1,1,0.6)),url(..//images/home.jpg);
+    */
+}
+
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    NOTE: Transform: translate takes CENTER to determine new LOCATION
+    */
+    color: white;
+}
+
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 4px solid #ff0000;
+    margin-bottom: 50px;
+    padding: 5px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff0000;
+    /*
+    NOTE: this Padding 8px then 0; make sure you use both because this 0 will keep align everything
+    */
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    /*
+    NOTE: border, outline & background MUST BE NONE in order to make INVISIBLE INPUT BOX
+    WHICH IS QUITE GOOD.
+    */
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #ff0000;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 12px 0;
+}
